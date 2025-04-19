@@ -1,0 +1,29 @@
+{
+  "name": "devtinder",
+  "version": "1.0.0",
+  "description": "Tinder for developers",
+  "keywords": [
+    "javascipt",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/Shre-ya-web/DevTinder#readme",
+  "bugs": {
+    "url": "https://github.com/Shre-ya-web/DevTinder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shre-ya-web/DevTinder.git"
+  },
+  "license": "ISC",
+  "author": "Shreya kushwaha",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev":"nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
