@@ -1,27 +1,24 @@
 const express = require("express")
+const {adminAuth} = require("./middlewares/auth")
 
 
 const app = express();
 
-app.get("/user",(req,res) =>{
-    res.send({firstname:"Shreya Kushwaha",lastname:"kushwaha"})
-})
-
-app.post("/user",(req,res) =>{
-    res.send("post request successfully done")
-})
-
-app.delete("/user",(req,res)=>{
-    res.send("delete request successfylly done")
-})
-
-// handling the code
-app.use("/test",(req,res) =>{
-    res.send("test server") ///this function handles the code
-})
-// app.use("/",(req,res) =>{
-//     res.send("hello from thr server") ///this function handles the code
+app.use("/admin",adminAuth)
+// app.get("/User", (req , res)=>{
+//     // res.send("Route handler 1")
+//     // console.log("handling route user 2 !!!")
+//     res.send("user route handler")
 // })
+
+app.get("/admin/getalldata", (req,res)=>{
+    res.send("All data sent")
+})
+
+app.get("/admin/DeleteData" , (req,res)=>{
+    res.send("data deleted successfully!!!!!")
+})
+
 
 
 app.listen(7777, ()=>{
