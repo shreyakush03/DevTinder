@@ -9,5 +9,5 @@ const connectDb = async () => {
     ) //returns a promise
 }
 
-module.exports = connectDb
+module.exports = connectDb; 
 

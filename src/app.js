@@ -24,5 +24,5 @@ connectDb().then(() => {
         console.log("server is successfully listening on port 7777")
     })
 }).catch(err => {
-    console.error("Database cannot be established")
+    console.error("Database connection cannot be established")
 })
