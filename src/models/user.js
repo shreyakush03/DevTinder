@@ -53,7 +53,7 @@ const UserSchema = mongoose.Schema(
             type: String,
             default: "Hey! hope you're doing well "
         },
-        photoURL: {
+        photoUrl: {
             type: String,
         },
         skills: {
